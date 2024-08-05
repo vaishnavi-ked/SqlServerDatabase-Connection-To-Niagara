@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1" is="def/rdbSqlServer:SqlServerDatabase" display="Sql Server Database" icon="/ord?module://icons/x16/device.png" xmlns="http://obix.org/ns/schema/1.0">
+ <str name="status" val="0" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/status/" display="{ok}" displayName="Status">
+ </str>
+ <bool name="enabled" val="true" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/enabled/" displayName="Enabled" writable="true"/>
+ <str name="faultCause" val="" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/faultCause/" displayName="Fault Cause"/>
+ <obj name="health" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/health/" is="def/driver:PingHealth" display="Ok [05-Aug-24 8:10 PM IST]" displayName="Health" icon="/ord?module://icons/x16/monitor.png">
+  <bool name="down" val="false" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/health/down/" displayName="Down" writable="true"/>
+  <bool name="alarm" val="false" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/health/alarm/" displayName="Alarm" writable="true"/>
+  <abstime name="lastOkTime" val="2024-08-05T20:10:00.000+05:30" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/health/lastOkTime/" display="05-Aug-24 8:10 PM IST" displayName="Last Ok Time" tz="Asia/Calcutta" writable="true"/>
+  <abstime name="lastFailTime" val="1970-01-01T05:30:00.000+05:30" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/health/lastFailTime/" null="true" display="null" displayName="Last Fail Time" tz="Asia/Calcutta" writable="true"/>
+  <str name="lastFailCause" val="" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/health/lastFailCause/" displayName="Last Fail Cause" writable="true"/>
+ </obj>
+ <ref name="alarmSourceInfo" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/alarmSourceInfo/" is="def/alarm:AlarmSourceInfo" display="Alarm Source Info" displayName="Alarm Source Info" icon="/ord?module://icons/x16/navOnly/alarmService.png"/>
+ <op name="ping" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/ping/" displayName="Ping"/>
+ <uri name="hostAddress" val="ip:192.168.1.12" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/hostAddress/" displayName="Host Address" writable="true"/>
+ <bool name="useEncryptedConnection" val="false" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/useEncryptedConnection/" displayName="Use Encrypted Connection" writable="true"/>
+ <str name="userName" val="Vaishnavi" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/userName/" displayName="User Name" writable="true"/>
+ <str name="password" val="" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/password/" display="--password--" displayName="Password" writable="true"/>
+ <ref name="worker" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/worker/" is="def/rdb:RdbmsWorker" display="Rdbms Worker" displayName="Worker" icon="/ord?module://icons/x16/gears.png"/>
+ <enum name="exportMode" val="byHistoryId" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/exportMode/" display="By History Id" displayName="Export Mode" range="def/rdb:RdbmsHistoryExportMode/~range" writable="true"/>
+ <bool name="useUnicodeEncodingScheme" val="false" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/useUnicodeEncodingScheme/" displayName="Use Unicode Encoding Scheme"/>
+ <enum name="timestampStorage" val="dialectDefault" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/timestampStorage/" display="Dialect Default" displayName="Timestamp Storage" range="def/rdb:RdbmsTimestampStorage/~range"/>
+ <ref name="points" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/points/" is="def/rdb:RdbmsPointDeviceExt" display="Rdbms Point Device Ext" displayName="Points" icon="/ord?module://icons/x16/navOnly/points.png"/>
+ <bool name="sqlSchemeEnabled" val="true" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/sqlSchemeEnabled/" displayName="Sql Scheme Enabled" writable="true"/>
+ <ref name="rdbSecuritySettings" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/rdbSecuritySettings/" is="def/rdb:RdbSecuritySettings" display="Rdb Security Settings" displayName="Rdb Security Settings" icon="/ord?module://icons/x16/keys.png"/>
+ <op name="allowDialectModifications" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/allowDialectModifications/" displayName="Allow Dialect Modifications"/>
+ <enum name="tlsMinProtocol" val="tlsv1_2" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/tlsMinProtocol/" display="TLSv1.2+" displayName="Tls Min Protocol" range="def/baja:SslTlsEnum/~range" writable="true"/>
+ <bool name="verifySubjectInCertificate" val="true" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/verifySubjectInCertificate/" displayName="Verify Subject In Certificate" writable="true"/>
+ <str name="instanceName" val="New" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/instanceName/" displayName="Instance Name" writable="true"/>
+ <int name="port" val="1433" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/port/" displayName="Port" writable="true"/>
+ <ref name="histories" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/histories/" is="def/rdbSqlServer:SqlServerHistoryDeviceExt def/driver:DescriptorDeviceExt" display="Sql Server History Device Ext" displayName="Histories" icon="/ord?module://icons/x16/navOnly/histories.png"/>
+ <str name="extraConnectionProperties" val="" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/extraConnectionProperties/" displayName="Extra Connection Properties" writable="true"/>
+ <enum name="version" val="sqlServer2008" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/version/" display="SQL Server 2008/2012" displayName="Version" range="def/rdbSqlServer:SqlServerVersion/~range"/>
+ <str name="sqlServerCert" val="" href="local:|foxs:|station:|slot:/Drivers/RdbmsNetwork/SqlServerDatabase1/sqlServerCert/" displayName="Sql Server Cert" writable="true"/>
+</obj>
